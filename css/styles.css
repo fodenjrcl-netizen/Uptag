@@ -1,0 +1,70 @@
+.menu-sesiones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.boton {
+  background-color: #ff5100;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+.boton:active {
+  background-color: #003d80;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer; /* Esto cambia el cursor a la manito */
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+summary:hover {
+  background-color: #e0e0e0; /* Color suave al pasar el mouse */
+}
+ul.grados li {
+  content: "• ";
+  margin-left: 16px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+details p {
+  opacity: 0;
+}
+details p {
+  max-height: 0;
+  overflow: hidden;
+}
+
+details div {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+}
